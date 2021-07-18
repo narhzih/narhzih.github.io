@@ -1,17 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Olawale Omosekeji | Welcome to my portfolio</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-</head>
-<body>
-    <h1>I am just working on my site</h1>
-    <button id="button">Click me for test</button>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Griffy&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav header__nav">
+        <a href="#" class="nav__link active">
+          <svg class="icon nav__link--icon">
+            <use xlink:href="assets/images/icons.svg#icon-pencil"></use>
+          </svg>
+          <span class="nav__link--text">Intro</span>
+        </a>
+        <a href="#" class="nav__link">
+          <svg class="icon nav__link--icon">
+            <use xlink:href="assets/images/icons.svg#icon-user"></use>
+          </svg>
+          <span class="nav__link--text">About</span>
+        </a>
+        <a href="#" class="nav__link">
+          <svg class="icon nav__link--icon">
+            <use xlink:href="assets/images/icons.svg#icon-user-tie"></use>
+          </svg>
+          <span class="nav__link--text">Work History</span>
+        </a>
+        <a href="#" class="nav__link">
+          <svg class="icon nav__link--icon">
+            <use xlink:href="assets/images/icons.svg#icon-power-cord"></use>
+          </svg>
+          <span class="nav__link--text">KMALBM</span>
+        </a>
+      </nav>
 
+      <div class="header__content">
+        <p>Hello, my names are Olawale Omosekeji <span>(Narhzih)</span></p>
+        <h1>
+          I am a
+          <span
+            >{
+            <span
+              id="txt-type"
+              data-wait="3000"
+              data-words='["Frontend developer", "Backend developer", "Server administrator" , "Full Stack Software Engineer"]'
+            ></span>
+            }</span
+          >
+        </h1>
+        <div class="header__content__connect">
+          <a href="#" class="header__content__connect__link">
+            <svg class="icon icon--twitter">
+              <use xlink:href="assets/images/icons.svg#icon-twitter"></use>
+            </svg>
+            <span>Twitter</span>
+          </a>
+
+          <a href="#" class="header__content__connect__link">
+            <svg class="icon icon--github">
+              <use xlink:href="assets/images/icons.svg#icon-github"></use>
+            </svg>
+            <span>Github</span>
+          </a>
+
+          <!--          <a href="#" class="header__content__connect__link">-->
+          <!--            <svg class="icon">-->
+          <!--              <use xlink:href="assets/images/icons.svg#icon-twitter"></use>-->
+          <!--            </svg>-->
+          <!--            <span>Medium</span>-->
+          <!--          </a>-->
+
+          <a href="#" class="header__content__connect__link">
+            <svg class="icon icon--spotify">
+              <use xlink:href="assets/images/icons.svg#icon-spotify"></use>
+            </svg>
+            <span>Spotify</span>
+          </a>
+        </div>
+      </div>
+    </header>
 
     <script src="assets/js/script.js"></script>
-</body>
+  </body>
 </html>
