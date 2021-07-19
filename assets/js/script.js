@@ -48,3 +48,17 @@ function init() {
 
   new TypeWriter(txtElement, words, wait);
 }
+
+const stickyNav = function () {
+  const nav = document.getElementById("nav");
+
+  window.addEventListener("scroll", function (e) {
+    if (window.scrollY > 500) {
+      nav.classList.add("scrolled");
+    } else {
+      nav.classList.remove("scrolled");
+    }
+  });
+};
+
+stickyNav();

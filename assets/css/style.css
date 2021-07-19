@@ -339,3 +339,81 @@ p {
 #txt-type > .txt {
   border-right: 0.2rem solid var(--color-primary);
   margin-right: 0.3rem; }
+
+/*--- Mobile responsiveness --- */
+@media only screen and (max-width: 1280px) {
+  .header__nav {
+    width: 90%; }
+  .header__content {
+    width: 90%; } }
+
+@media only screen and (max-width: 990px) {
+  .header__nav {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    width: 5rem;
+    left: -30%;
+    border-radius: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all 0.3s linear; }
+  .header .nav {
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px; }
+    .header .nav.scrolled {
+      left: 0; }
+    .header .nav__link {
+      padding: 2rem 0.2rem;
+      border-radius: 0;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center; }
+      .header .nav__link--text {
+        display: none !important; }
+      .header .nav__link:not(:last-child) {
+        border-bottom: 0.5px solid #6f6f73; }
+      .header .nav__link:first-child {
+        border-top-right-radius: 15px; }
+      .header .nav__link:last-child {
+        border-bottom-right-radius: 15px; }
+  .header__content {
+    width: 90%; }
+    .header__content > p {
+      font-size: 1rem; }
+    .header__content > h1 {
+      font-size: 2.5rem; }
+    .header__content__connect {
+      width: 80%; }
+      .header__content__connect__link > span {
+        padding: 0.5rem 1.7rem 0.5rem 0.5rem;
+        font-size: 0.8rem; }
+      .header__content__connect__link > .icon {
+        padding: 1rem; } }
+
+@media only screen and (max-width: 768px) {
+  .header__content__connect {
+    width: 60%; }
+    .header__content__connect__link > span {
+      display: none; } }
+
+@media only screen and (max-width: 600px) {
+  .header__nav {
+    width: 4rem; }
+  .header__content > h1 {
+    font-size: 1.8rem; }
+    .header__content > h1 > span {
+      display: block; }
+  .header__content > p {
+    font-size: 0.7rem; }
+  .header__content__connect {
+    width: 60%; }
+    .header__content__connect__link > span {
+      display: none; }
+  .nav__link {
+    padding: 2rem 0; } }
+
+@media only screen and (max-width: 480px) {
+  .header__content__connect {
+    width: 90%; } }
