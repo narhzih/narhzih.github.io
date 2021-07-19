@@ -155,19 +155,21 @@ p {
       border-top-right-radius: 50px;
       border-bottom-right-radius: 50px; }
 
-/*--- About section ---*/
-.about {
+.section {
   padding: 6rem 10rem; }
-  .about__frame {
-    text-align: center; }
-    .about__frame__header {
-      font-size: 2.5rem;
-      font-family: var(--header-font);
-      text-align: center;
-      margin-bottom: 1rem; }
-  .about__skills {
-    margin: 5rem auto 2rem auto;
-    width: 100%; }
+
+/*--- About section ---*/
+.about__frame {
+  text-align: center; }
+  .about__frame__header {
+    font-size: 2.5rem;
+    font-family: var(--header-font);
+    text-align: center;
+    margin-bottom: 1rem; }
+
+.about__skills {
+  margin: 5rem auto 2rem auto;
+  width: 100%; }
 
 .skill {
   margin-top: 2rem; }
@@ -201,35 +203,33 @@ p {
 
 /* ---End of About section ---*/
 /* ---Work History section ---*/
-.works {
-  padding: 6rem 10rem; }
-  .works__list {
-    margin-top: 2rem;
-    display: grid;
-    width: 100%;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-gap: 2rem;
-    flex-direction: row; }
-    .works__list__item {
-      position: relative;
-      border-radius: 10px;
-      height: 20rem; }
-      .works__list__item:hover {
-        cursor: pointer; }
-        .works__list__item:hover > .w-card__content {
-          width: 100%;
-          height: 100%;
-          display: flex;
-          position: absolute;
-          top: 0;
-          left: 0;
-          background-color: var(--color-secondary);
-          z-index: 10000000;
-          border-radius: 10px;
-          opacity: 1;
-          transform: scale(1);
-          box-sizing: border-box; }
+.works__list {
+  margin-top: 2rem;
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 2rem;
+  flex-direction: row; }
+  .works__list__item {
+    position: relative;
+    border-radius: 10px;
+    height: 20rem; }
+    .works__list__item:hover {
+      cursor: pointer; }
+      .works__list__item:hover > .w-card__content {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: var(--color-secondary);
+        z-index: 10000000;
+        border-radius: 10px;
+        opacity: 1;
+        transform: scale(1);
+        box-sizing: border-box; }
 
 .w-card {
   overflow: hidden;
@@ -300,8 +300,7 @@ p {
 
 /* ---End of Work history section ---*/
 .contact {
-  background-color: var(--color-primary);
-  padding: 6rem 10rem; }
+  background-color: var(--color-primary); }
   .contact__frame__lead {
     margin-bottom: 2rem; }
   .contact__connect {
@@ -390,15 +389,33 @@ p {
         padding: 0.5rem 1.7rem 0.5rem 0.5rem;
         font-size: 0.8rem; }
       .header__content__connect__link > .icon {
-        padding: 1rem; } }
+        padding: 1rem; }
+  .works__list {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr); }
+  .section {
+    padding: 6rem 3rem; } }
 
 @media only screen and (max-width: 768px) {
   .header__content__connect {
     width: 60%; }
     .header__content__connect__link > span {
-      display: none; } }
+      display: none; }
+  .skill__cards {
+    flex-direction: column; }
+  .contact__connect {
+    width: 60%;
+    justify-content: space-between; }
+    .contact__connect__link {
+      margin-right: 0; }
+      .contact__connect__link > span {
+        display: none; }
+      .contact__connect__link > .icon {
+        margin-right: 0 !important; } }
 
 @media only screen and (max-width: 600px) {
+  .frame__header {
+    font-size: 1.8rem; }
   .header__nav {
     width: 4rem; }
   .header__content > h1 {
@@ -412,8 +429,19 @@ p {
     .header__content__connect__link > span {
       display: none; }
   .nav__link {
-    padding: 2rem 0; } }
+    padding: 2rem 0; }
+  .works__list {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 1fr); }
+  .contact__connect {
+    width: 100%; }
+    .contact__connect__link > span {
+      display: none; }
+  .section {
+    padding: 3rem 1rem; } }
 
 @media only screen and (max-width: 480px) {
   .header__content__connect {
+    width: 90%; }
+  .contact__connect {
     width: 90%; } }

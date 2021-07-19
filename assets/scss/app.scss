@@ -224,10 +224,11 @@ p {
   }
 }
 
+.section {
+  padding: 6rem 10rem;
+}
 /*--- About section ---*/
 .about {
-  padding: 6rem 10rem;
-
   &__frame {
     text-align: center;
     &__header {
@@ -300,7 +301,6 @@ p {
 
 /* ---Work History section ---*/
 .works {
-  padding: 6rem 10rem;
   //background-image: linear-gradient(
   //  to right,
   //  rgba(#ff1c5c, 20%) 20%,
@@ -474,7 +474,6 @@ p {
 
 .contact {
   background-color: var(--color-primary);
-  padding: 6rem 10rem;
 
   &__frame {
     &__lead {
@@ -616,6 +615,16 @@ p {
       }
     }
   }
+
+  .works {
+    &__list {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+    }
+  }
+  .section {
+    padding: 6rem 3rem;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -631,9 +640,39 @@ p {
       }
     }
   }
+
+  // about
+  .skill {
+    &__cards {
+      flex-direction: column;
+    }
+  }
+
+  .contact {
+    &__connect {
+      width: 60%;
+      justify-content: space-between;
+      &__link {
+        margin-right: 0;
+
+        & > span {
+          display: none;
+        }
+
+        & > .icon {
+          margin-right: 0 !important;
+        }
+      }
+    }
+  }
 }
 
 @media only screen and (max-width: 600px) {
+  .frame {
+    &__header {
+      font-size: 1.8rem;
+    }
+  }
   .header {
     &__nav {
       width: 4rem;
@@ -664,6 +703,28 @@ p {
       padding: 2rem 0;
     }
   }
+
+  .works {
+    &__list {
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(6, 1fr);
+    }
+  }
+
+  .contact {
+    &__connect {
+      width: 100%;
+      &__link {
+        & > span {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .section {
+    padding: 3rem 1rem;
+  }
 }
 
 @media only screen and (max-width: 480px) {
@@ -672,6 +733,12 @@ p {
       &__connect {
         width: 90%;
       }
+    }
+  }
+
+  .contact {
+    &__connect {
+      width: 90%;
     }
   }
 }

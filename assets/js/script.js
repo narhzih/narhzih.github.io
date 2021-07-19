@@ -61,4 +61,4 @@ const stickyNav = function () {
   });
 };
 
-stickyNav();
+// stickyNav();
