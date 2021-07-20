@@ -22,6 +22,7 @@
 
 html {
   font-size: 16px;
+  scroll-behavior: smooth !important;
 }
 
 body {
@@ -547,46 +548,13 @@ p {
 @media only screen and (max-width: 990px) {
   .header {
     &__nav {
-      //width: 90%;
-      position: fixed;
+      position: absolute;
       display: flex;
-      flex-direction: column;
-      width: 5rem;
-      left: -30%;
+      flex-direction: row;
       border-radius: 0;
-      top: 50%;
-      transform: translateY(-50%);
+      top: -50rem;
+      //transform: translateY(-50%);
       transition: all 0.3s linear;
-    }
-
-    .nav {
-      &.scrolled {
-        left: 0;
-      }
-      border-top-right-radius: 15px;
-      border-bottom-right-radius: 15px;
-      &__link {
-        padding: 2rem 0.2rem;
-        border-radius: 0;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        &--text {
-          display: none !important;
-        }
-        &:not(:last-child) {
-          border-bottom: 0.5px solid #6f6f73;
-        }
-
-        &:first-child {
-          border-top-right-radius: 15px;
-        }
-
-        &:last-child {
-          border-bottom-right-radius: 15px;
-        }
-      }
     }
 
     &__content {
@@ -612,6 +580,45 @@ p {
             padding: 1rem;
           }
         }
+      }
+    }
+  }
+  .nav {
+    &.scrolled {
+      width: 90%;
+      position: fixed;
+      top: 0;
+      border-bottom-left-radius: 15px;
+      border-bottom-right-radius: 15px;
+    }
+
+    &__link {
+      //padding: 2rem 0.2rem;
+      border-radius: 0;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      flex: 0 0 15%;
+      &--text {
+        display: none !important;
+      }
+
+      & > .icon {
+        margin-right: 0;
+      }
+      //&:not(:last-child) {
+      //  border-bottom: 0.5px solid #6f6f73;
+      //}
+      //
+      &:first-child {
+        border-bottom-left-radius: 15px;
+        border-top-left-radius: 0;
+      }
+
+      &:last-child {
+        border-bottom-right-radius: 15px;
+        border-top-right-radius: 0;
       }
     }
   }
@@ -675,7 +682,7 @@ p {
   }
   .header {
     &__nav {
-      width: 4rem;
+      width: 90% !important;
     }
     &__content {
       & > h1 {
@@ -733,6 +740,14 @@ p {
       &__connect {
         width: 90%;
       }
+    }
+  }
+
+  .nav {
+    &__link {
+      box-sizing: border-box;
+      padding: 1.5rem 0 !important;
+      flex: 0 0 25%;
     }
   }
 

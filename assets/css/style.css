@@ -18,7 +18,8 @@
   background: transparent; }
 
 html {
-  font-size: 16px; }
+  font-size: 16px;
+  scroll-behavior: smooth !important; }
 
 body {
   width: 100%;
@@ -348,35 +349,12 @@ p {
 
 @media only screen and (max-width: 990px) {
   .header__nav {
-    position: fixed;
+    position: absolute;
     display: flex;
-    flex-direction: column;
-    width: 5rem;
-    left: -30%;
+    flex-direction: row;
     border-radius: 0;
-    top: 50%;
-    transform: translateY(-50%);
+    top: -50rem;
     transition: all 0.3s linear; }
-  .header .nav {
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px; }
-    .header .nav.scrolled {
-      left: 0; }
-    .header .nav__link {
-      padding: 2rem 0.2rem;
-      border-radius: 0;
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center; }
-      .header .nav__link--text {
-        display: none !important; }
-      .header .nav__link:not(:last-child) {
-        border-bottom: 0.5px solid #6f6f73; }
-      .header .nav__link:first-child {
-        border-top-right-radius: 15px; }
-      .header .nav__link:last-child {
-        border-bottom-right-radius: 15px; }
   .header__content {
     width: 90%; }
     .header__content > p {
@@ -390,6 +368,29 @@ p {
         font-size: 0.8rem; }
       .header__content__connect__link > .icon {
         padding: 1rem; }
+  .nav.scrolled {
+    width: 90%;
+    position: fixed;
+    top: 0;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px; }
+  .nav__link {
+    border-radius: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 15%; }
+    .nav__link--text {
+      display: none !important; }
+    .nav__link > .icon {
+      margin-right: 0; }
+    .nav__link:first-child {
+      border-bottom-left-radius: 15px;
+      border-top-left-radius: 0; }
+    .nav__link:last-child {
+      border-bottom-right-radius: 15px;
+      border-top-right-radius: 0; }
   .works__list {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr); }
@@ -417,7 +418,7 @@ p {
   .frame__header {
     font-size: 1.8rem; }
   .header__nav {
-    width: 4rem; }
+    width: 90% !important; }
   .header__content > h1 {
     font-size: 1.8rem; }
     .header__content > h1 > span {
@@ -443,5 +444,9 @@ p {
 @media only screen and (max-width: 480px) {
   .header__content__connect {
     width: 90%; }
+  .nav__link {
+    box-sizing: border-box;
+    padding: 1.5rem 0 !important;
+    flex: 0 0 25%; }
   .contact__connect {
     width: 90%; } }
