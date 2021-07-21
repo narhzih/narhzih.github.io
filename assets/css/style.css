@@ -143,10 +143,10 @@ p {
     align-items: center;
     justify-content: center; }
     .header .nav__logo {
-      flex: 0 0 70%;
+      flex: 0 0 100%;
       box-sizing: border-box; }
       .header .nav__logo__img {
-        width: 120px; }
+        width: 150px; }
         .header .nav__logo__img:hover {
           cursor: pointer; }
     .header .nav__links {
@@ -524,8 +524,6 @@ textarea::placeholder {
     width: 100%; }
   .header {
     padding: 3rem 2rem; }
-    .header .nav {
-      display: none !important; }
     .header__content__box {
       position: relative;
       padding: 0; }

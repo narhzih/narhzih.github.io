@@ -166,10 +166,10 @@ p {
     align-items: center;
     justify-content: center;
     &__logo {
-      flex: 0 0 70%;
+      flex: 0 0 100%;
       box-sizing: border-box;
       &__img {
-        width: 120px;
+        width: 150px;
         &:hover {
           cursor: pointer;
         }
@@ -732,9 +732,6 @@ textarea::placeholder {
   }
 
   .header {
-    .nav {
-      display: none !important;
-    }
     padding: 3rem 2rem;
     &__content {
       &__box {
