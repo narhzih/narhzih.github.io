@@ -4,351 +4,348 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Olawale Omosekeji | Welcome to my portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Acme&family=Alfa+Slab+One&family=Lato:wght@300;400;700;900&display=swap"
-      rel="stylesheet"
-    />
+    <title>I'm Olawale | Welcome to my portfolio</title>
     <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="icon" href="assets/images/logo.svg" />
   </head>
   <body>
-    <header class="header" id="header">
-      <nav class="nav header__nav" id="nav">
-        <a href="#header" class="nav__link">
-          <svg class="icon nav__link--icon">
-            <use xlink:href="assets/images/icons.svg#icon-pencil"></use>
-          </svg>
-          <span class="nav__link--text">Intro</span>
-        </a>
-        <a href="#about" class="nav__link">
-          <svg class="icon nav__link--icon">
-            <use xlink:href="assets/images/icons.svg#icon-user"></use>
-          </svg>
-          <span class="nav__link--text">About</span>
-        </a>
-        <a href="#works" class="nav__link">
-          <svg class="icon nav__link--icon">
-            <use xlink:href="assets/images/icons.svg#icon-user-tie"></use>
-          </svg>
-          <span class="nav__link--text">Work History</span>
-        </a>
-        <a href="#contact" class="nav__link">
-          <svg class="icon nav__link--icon">
-            <use xlink:href="assets/images/icons.svg#icon-power-cord"></use>
-          </svg>
-          <span class="nav__link--text">Contact me</span>
-        </a>
+    <header class="header">
+      <nav class="header__nav nav">
+        <div class="nav__logo">
+          <img src="assets/images/logo.svg" alt="" class="nav__logo__img" />
+        </div>
+        <div class="nav__links">
+          <a href="#" class="nav__links__link active">Services</a>
+          <a href="#" class="nav__links__link">Works</a>
+          <a href="#" class="nav__links__link">Blog</a>
+        </div>
       </nav>
-
       <div class="header__content">
-        <p>Hello, my name is Olawale</p>
-        <h1>
-          I am a
-          <span
-            >{
-            <span
-              id="txt-type"
-              data-wait="3000"
-              data-words='["Frontend developer", "Backend developer", "Server administrator" , "Full Stack Software Engineer", "Mentor"]'
-            ></span>
-            }</span
-          >
-        </h1>
-        <!--        <p>Welcome to my portfolio website</p>-->
-        <div class="header__content__connect">
-          <a
-            href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwiagb2vq_HxAhWJkhQKHboMCR8QFjAAegQIDhAD&url=https%3A%2F%2Ftwitter.com%2Fsimply_symfony_%3Flang%3Den&usg=AOvVaw3Mn6XN6E9-kS9G6FY53kvG"
-            class="header__content__connect__link"
-            target="_blank"
-          >
-            <svg class="icon icon--twitter">
-              <use xlink:href="assets/images/icons.svg#icon-twitter"></use>
-            </svg>
-            <span>Twitter</span>
-          </a>
-
-          <a
-            href="https://github.com/narhzih"
-            class="header__content__connect__link"
-            target="_blank"
-          >
-            <svg class="icon icon--github">
-              <use xlink:href="assets/images/icons.svg#icon-github"></use>
-            </svg>
-            <span>Github</span>
-          </a>
-
-          <!--          <a href="#" class="header__content__connect__link">-->
-          <!--            <svg class="icon">-->
-          <!--              <use xlink:href="assets/images/icons.svg#icon-twitter"></use>-->
-          <!--            </svg>-->
-          <!--            <span>Medium</span>-->
-          <!--          </a>-->
-
-          <a
-            href="mailto:omosekejiolawale@gmail.com"
-            class="header__content__connect__link"
-          >
-            <svg class="icon icon--spotify">
-              <use xlink:href="assets/images/icons.svg#icon-spotify"></use>
-            </svg>
-            <span>Spotify</span>
-          </a>
+        <div class="header__content__box header__content__box--1">
+          <h1 class="heading--intro">
+            Olawale <br />
+            Omosekeji.
+          </h1>
+          <div class="header__content__links">
+            <a href="#" class="header__content__links__link">
+              <svg>
+                <use xlink:href="assets/images/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+            <a href="#" class="header__content__links__link">
+              <svg>
+                <use xlink:href="assets/images/icons.svg#icon-whatsapp"></use>
+              </svg>
+            </a>
+            <a href="#" class="header__content__links__link">
+              <svg>
+                <use xlink:href="assets/images/icons.svg#icon-github"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="header__content__box header__content__box--2">
+          <h4 class="heading--sub">Introduction</h4>
+          <h2 class="heading--main">
+            Fullstack Software engineer and Mentor, based in Nigeria.
+          </h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque
+            distinctio dolores iste sit. Accusamus at corporis, cum doloremque
+            est id illo impedit itaque iure mollitia placeat, quae quaerat quasi
+            soluta!
+          </p>
+          <a href="#" class="button button--link"> Some link &rarr;</a>
         </div>
       </div>
     </header>
 
-    <section id="about" class="section about">
-      <div class="frame about__frame">
-        <h3 class="frame__header about__frame__header color--secondary">
-          { CODING IS MY <span class="color--primary">PASSION</span> }
-        </h3>
-        <p class="frame__lead about__frame__lead">
-          Hi, my name is Olawale, a CS undergraduate of Obafemi Awolowo
-          University, it's nice to meet you. I am a software engineer whose
-          passion is to solve problems with what i know. I'm quietly confident,
-          naturally curious, and perpetually working on improving my skills one
-          pattern at a time. <br />
-          Professionally I am a full stack web developer. Since beginning my
-          career as a Software engineer for the past 4 years, I have worked with
-          start ups and agencies to help bring their ideas and dreams to life.
-          Other than that, I love to dabble with anything related to software
-          engineering, networking and other interesting fields of Computer
-          science. Outside work, I tinker with C, C++ and Python and I love
-          working with those technologies but within work, below are the things
-          that I do.
+    <section class="about">
+      <div class="about__box about__box--1">
+        <h4 class="heading--sub">About</h4>
+        <h2 class="heading--main">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet
+          cupiditate.
+        </h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad autem
+          commodi consequuntur cum earum, eligendi error facilis, magni
+          molestias nam natus officiis, optio praesentium quas sapiente sint
+          tempore voluptas voluptates.
+        </p>
+
+        <a href="#" class="button button--link"> Some link &rarr;</a>
+      </div>
+
+      <div class="about__box about__box--2">
+        <h2 class="heading--main">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet
+          cupiditate. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          Amet cupiditate.
+        </h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad autem
+          commodi consequuntur cum earum, eligendi error facilis, magni
+          molestias nam natus officiis, optio praesentium quas sapiente sint
+          tempore voluptas voluptates. Lorem ipsum dolor sit amet, consectetur
+          adipisicing elit. Ad autem commodi consequuntur cum earum, eligendi
+          error facilis, magni molestias nam natus officiis, optio praesentium
+          quas sapiente sint tempore voluptas voluptates.
         </p>
       </div>
-      <div class="about__skills skill__cards">
-        <div class="about__skill skill__card skill__card--1">
-          <svg class="skill__card__icon">
-            <use xlink:href="assets/images/icons.svg#icon-display"></use>
-          </svg>
-          <h4 class="skill__card__title">Front-end Developer</h4>
-          <p class="skill__card__desc">
-            I like to code things from scratch, and enjoy bringing ideas to life
-            in the browser.
-          </p>
-          <div class="skill__card__content">
-            <h4 class="skill__card__title">Languages I speak</h4>
-            <p class="skill__card__desc">
-              HTML, CSS, SCSS, Javascript, VueJs, NuxtJs
-            </p>
-          </div>
-        </div>
-
-        <div class="about__skill skill__card skill__card--2">
-          <svg class="skill__card__icon">
-            <use xlink:href="assets/images/icons.svg#icon-data"></use>
-          </svg>
-          <h4 class="skill__card__title">Back-end Developer</h4>
-          <p class="skill__card__desc">
-            I love to build and maintain the technology needed to power the
-            components which enable the user-facing side of the website to exist
-          </p>
-          <div class="skill__card__content">
-            <h4 class="skill__card__title">Languages I speak</h4>
-            <p class="skill__card__desc">
-              NodeJs, Express, Meteor, PHP, Slim, Laravel, SQL
-            </p>
-          </div>
-        </div>
-
-        <div class="about__skill skill__card skill__card--3">
-          <svg class="skill__card__icon">
-            <use xlink:href="assets/images/icons.svg#icon-bulb"></use>
-          </svg>
-          <h4 class="skill__card__title">Mentor</h4>
-          <p class="skill__card__desc">
-            There is nothing that i value more than passing down what I know to
-            people that are interested in listening.
-          </p>
-          <div class="skill__card__content">
-            <h4 class="skill__card__title">Mentorship areas</h4>
-            <p class="skill__card__desc">
-              Web development, Data Science and Engineering
-            </p>
-          </div>
-        </div>
-      </div>
-      <p class="about__frame__lead">
-        Besides Software engineering and CS, I love music and gaming - I pride
-        myself with been a professional C.O.D player (You doubt me? Let's meet
-        in a lobby of your choice)
-      </p>
     </section>
 
-    <section id="works" class="works section">
-      <div class="frame works__frame">
-        <h3 class="frame__header works__frame__header color--secondary">
-          { Work History }
-        </h3>
-        <p class="frame__lead works__frame__lead color--secondary">
-          I am glad to have worked with some very awesome organizations and
-          start ups.
-        </p>
-
-        <div class="works__list">
-          <div class="works__list__item works__list__item--1 w-card">
-            <div class="w-card__bg w-card__bg--ados">
-              <img
-                class="w-card__bg__img w-card__bg__img--1"
-                src="assets/images/works/ados-logo.png"
-                alt=""
-              />
-            </div>
-            <div class="w-card__content">
-              <p>
-                { Adosmint } is an e-commerce platform that provides nationwide
-                delivery to people in Nigeria. Adosmint shutdown in 2020 for
-                rebranding and would be re-launched soon.
-              </p>
-
-              <a>Not available &#10005;</a>
-            </div>
+    <section class="skills">
+      <div class="skills__container">
+        <div class="skills__skill">
+          <div class="skills__skill__box skills__skill__box--1">
+            <svg class="skills__skill__icon">
+              <use xlink:href="assets/images/icons.svg#icon-display"></use>
+            </svg>
+            <h2>
+              FrontEnd <br />
+              Developer
+            </h2>
           </div>
-
-          <div class="works__list__item works__list__item--2 w-card">
-            <div class="w-card__bg w-card__bg--dcg">
-              <img
-                class="w-card__bg__img w-card__bg__img--2"
-                src="assets/images/works/dcg.png"
-                alt=""
-              />
-            </div>
-            <div class="w-card__content">
-              <p>
-                { DCG } is a company which cares for and about its investor by
-                building the foresight envisioned by investors.
-              </p>
-
-              <a href="https://www.dcryptglobal.com/" target="_blank"
-                >Visit site &rarr;</a
-              >
-            </div>
+          <div class="skills__skill__box skills__skill__box--2">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Distinctio eligendi in necessitatibus vel vero? Atque, consequatur
+              eos eum hic, magni natus nostrum odio officia rem reprehenderit
+              tenetur ullam ut velit!
+            </p>
+            <h4>Languages I speak</h4>
+            <p>HTML, CSS, SASS, Javascript, VueJs, NuxtJs.</p>
           </div>
-
-          <div class="works__list__item works__list__item--3 w-card">
-            <div class="w-card__bg w-card__bg--hfn">
-              <img
-                class="w-card__bg__img w-card__bg__img--3"
-                src="assets/images/works/hfn.png"
-                alt=""
-              />
-            </div>
-            <div class="w-card__content">
-              <p>
-                { H.F.N } a group of innovative and unique forex traders based
-                in Africa; they evangelize the concepts of being participants in
-                the global financial market and provide educational resources to
-                interested individuals- teaching them how to be consistent and
-                independent profitable traders.
-              </p>
-
-              <a href="https://hendrayfinvest.netlify.com" target="_blank">
-                Visit site &rarr;
-              </a>
-            </div>
+        </div>
+        <div class="skills__skill">
+          <div class="skills__skill__box skills__skill__box--1">
+            <svg class="skills__skill__icon">
+              <use xlink:href="assets/images/icons.svg#icon-data"></use>
+            </svg>
+            <h2>
+              BackEnd <br />
+              Developer
+            </h2>
           </div>
-
-          <div class="works__list__item works__list__item--4 w-card">
-            <div class="w-card__bg w-card__bg--tb">
-              <img
-                class="w-card__bg__img w-card__bg__img--4"
-                src="assets/images/works/tb.svg"
-                alt=""
-              />
-            </div>
-            <div class="w-card__content">
-              <p>
-                { Trader's Base } mentor individuals and organisations whilst
-                providing competent educational platform for learning the
-                methods of trading and winning successfully in the
-                cryptocurrency world. (To be fully launched soon)
-              </p>
-
-              <a href="https://tradersbase.netlify.app" target="_blank"
-                >Visit site &rarr;</a
-              >
-            </div>
+          <div class="skills__skill__box skills__skill__box--2">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Distinctio eligendi in necessitatibus vel vero? Atque, consequatur
+              eos eum hic, magni natus nostrum odio officia rem reprehenderit
+              tenetur ullam ut velit!
+            </p>
+            <h4>Languages I speak</h4>
+            <p>NodeJs, Express, Meteor, PHP, Slim, Laravel, SQL.</p>
           </div>
-
-          <div class="works__list__item works__list__item--5 w-card">
-            <div class="w-card__bg w-card__bg--tis">
-              <img
-                class="w-card__bg__img w-card__bg__img--5"
-                src="assets/images/works/tcodeimage.png"
-                alt=""
-              />
-            </div>
-            <div class="w-card__content">
-              <p>
-                { TIS } are committed to enriching society by delivering
-                superior investment services
-              </p>
-
-              <a href="#">Visit site &rarr;</a>
-            </div>
+        </div>
+        <div class="skills__skill">
+          <div class="skills__skill__box skills__skill__box--1">
+            <svg class="skills__skill__icon">
+              <use xlink:href="assets/images/icons.svg#icon-bulb"></use>
+            </svg>
+            <h2>Mentor</h2>
           </div>
-
-          <div class="works__list__item works__list__item--6 w-card">
-            <div class="w-card__bg w-card__bg--scriptify">
-              <img
-                class="w-card__bg__img w-card__bg__img--6"
-                src="assets/images/works/scriptify.png"
-                alt=""
-              />
-            </div>
-            <div class="w-card__content">
-              <p>
-                { Scriptify247 } is an organization that provides writing
-                services of different kinds. Scriptify247 was shutdown in 202
-              </p>
-
-              <a>Not available &#10005;</a>
-            </div>
+          <div class="skills__skill__box skills__skill__box--2">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Distinctio eligendi in necessitatibus vel vero? Atque, consequatur
+              eos eum hic, magni natus nostrum odio officia rem reprehenderit
+              tenetur ullam ut velit!
+            </p>
+            <h4>Languages I speak</h4>
+            <p>HTML, CSS, SASS, Javascript, VueJs, NuxtJs.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="contact" class="contact section">
-      <div class="frame contact__frame">
-        <h3 class="frame__header contact__frame__header color--white">
-          { Contact me }
-        </h3>
-        <p class="frame__lead contact__frame__lead color--white">
-          Do you love what I do and would love to collaborate with me? Hit me up
-          through the following channels.
-        </p>
+    <section class="portfolio">
+      <div class="portfolio__header">
+        <h4 class="heading--sub">Work History</h4>
+        <h2 class="heading--main">
+          I am glad to have worked with the following organizations
+        </h2>
       </div>
+      <div class="portfolio__content">
+        <div class="portfolio__content__box portfolio__content__box--1">
+          <div
+            class="portfolio__content__box__bg portfolio__content__box__bg--1"
+          ></div>
+          <div class="portfolio__content__box__info">
+            <h2>
+              Hendray <br />
+              Finvest
+            </h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Doloribus error hic reiciendis. Accusantium, aperiam assumenda
+              error esse eum hic incidunt inventore laboriosam laborum nisi
+              ratione sed sit suscipit, tenetur vero?
+            </p>
+            <a href="#" class="button">Visit Site &rarr;</a>
+          </div>
+        </div>
+        <div
+          class="
+            portfolio__content__box
+            portfolio__content__box--2
+            portfolio__content__box--right
+          "
+        >
+          <div
+            class="portfolio__content__box__bg portfolio__content__box__bg--2"
+          ></div>
+          <div class="portfolio__content__box__info">
+            <h2>
+              Tcode <br />
+              Multi-concept
+            </h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Doloribus error hic reiciendis. Accusantium, aperiam assumenda
+              error esse eum hic incidunt inventore laboriosam laborum nisi
+              ratione sed sit suscipit, tenetur vero?
+            </p>
+            <a href="#" class="button">Visit Site &rarr;</a>
+          </div>
+        </div>
+        <div class="portfolio__content__box portfolio__content__box--3">
+          <div
+            class="portfolio__content__box__bg portfolio__content__box__bg--3"
+          ></div>
+          <div class="portfolio__content__box__info">
+            <h2>Scriptify247</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Doloribus error hic reiciendis. Accusantium, aperiam assumenda
+              error esse eum hic incidunt inventore laboriosam laborum nisi
+              ratione sed sit suscipit, tenetur vero?
+            </p>
+            <a href="#" class="button">Visit Site &rarr;</a>
+          </div>
+        </div>
+        <div
+          class="
+            portfolio__content__box
+            portfolio__content__box--4
+            portfolio__content__box--right
+          "
+        >
+          <div
+            class="portfolio__content__box__bg portfolio__content__box__bg--4"
+          ></div>
+          <div class="portfolio__content__box__info">
+            <h2>
+              Trader's <br />
+              Base
+            </h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Doloribus error hic reiciendis. Accusantium, aperiam assumenda
+              error esse eum hic incidunt inventore laboriosam laborum nisi
+              ratione sed sit suscipit, tenetur vero?
+            </p>
+            <a href="#" class="button">Visit Site &rarr;</a>
+          </div>
+        </div>
 
-      <div class="contact__connect">
-        <a href="#" class="contact__connect__link">
-          <svg class="icon icon--twitter">
-            <use xlink:href="assets/images/icons.svg#icon-twitter"></use>
-          </svg>
-          <span>Twitter</span>
-        </a>
-
-        <a href="#" class="contact__connect__link">
-          <svg class="icon icon--spotify">
-            <use xlink:href="assets/images/icons.svg#icon-whatsapp"></use>
-          </svg>
-          <span>Whatsapp</span>
-        </a>
-
-        <a href="#" class="contact__connect__link">
-          <svg class="icon icon--spotify">
-            <use xlink:href="assets/images/icons.svg#icon-whatsapp"></use>
-          </svg>
-          <span>Email</span>
-        </a>
+        <div class="portfolio__content__box portfolio__content__box--5">
+          <div
+            class="portfolio__content__box__bg portfolio__content__box__bg--5"
+          ></div>
+          <div class="portfolio__content__box__info">
+            <h2>
+              Dancrypt <br />
+              Global Enterprise
+            </h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Doloribus error hic reiciendis. Accusantium, aperiam assumenda
+              error esse eum hic incidunt inventore laboriosam laborum nisi
+              ratione sed sit suscipit, tenetur vero?
+            </p>
+            <a href="#" class="button">Visit Site &rarr;</a>
+          </div>
+        </div>
       </div>
     </section>
 
-    <script src="assets/js/script.js"></script>
+    <section class="contact">
+      <div class="contact__content">
+        <div class="contact__box contact__box--1">
+          <h2 class="heading--main">Want to hire me?</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem
+            consequatur, enim illo magni nihil nulla praesentium similique
+            voluptatum? Inventore, ipsa recusandae? Aliquam explicabo incidunt
+            molestias quibusdam sequi. Iure magnam, repellendus!
+          </p>
+          <br />
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem
+            consequatur, enim illo magni nihil nulla praesentium similique
+            voluptatum? Inventore, ipsa recusandae? Aliquam explicabo incidunt
+            molestias quibusdam sequi. Iure magnam, repellendus!
+          </p>
+
+          <a href="#" class="button"> omosekejiolawale@gmail.com </a>
+        </div>
+        <div class="contact__box contact__box--2">
+          <h2 class="heading--main">
+            Got a project? <br />
+            Let's talk
+          </h2>
+          <form action="#" class="form contact__form">
+            <div class="form__group">
+              <label for="name"></label>
+              <input
+                type="text"
+                class="form__input"
+                id="name"
+                placeholder="Tell me your name"
+              />
+            </div>
+
+            <div class="form__group">
+              <label for="email"></label>
+              <input
+                type="email"
+                class="form__input"
+                id="email"
+                placeholder="Your fancy email"
+              />
+            </div>
+
+            <div class="form__group">
+              <label for="message"></label>
+              <textarea
+                rows="5"
+                cols="30"
+                class="form__input form__input--textarea"
+                id="message"
+                placeholder="Tell me about your project"
+              ></textarea>
+            </div>
+
+            <button type="submit" class="form__button button">
+              Send &rarr;
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer__content">
+        <img
+          class="footer__content__logo"
+          src="assets/images/logo.png"
+          alt=""
+        />
+        <p><b>Thanks for scrolling.</b> That's all guys.</p>
+        <p>&copy; Olawale Omosekeji (Narhzih)</p>
+      </div>
+    </footer>
   </body>
 </html>
