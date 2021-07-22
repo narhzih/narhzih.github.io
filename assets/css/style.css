@@ -305,11 +305,21 @@ p {
   |  Portfolio section                 |
   -------------------------------------*/
 .portfolio {
+  position: relative;
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
   padding: 3rem 10rem 10rem 10rem;
   box-sizing: border-box; }
+  .portfolio__img {
+    position: absolute;
+    z-index: -1; }
+    .portfolio__img--1 {
+      left: 0;
+      top: 70rem; }
+    .portfolio__img--2 {
+      top: 0;
+      right: 0; }
   .portfolio__header {
     width: 100%;
     box-sizing: border-box; }
@@ -502,6 +512,16 @@ textarea::placeholder {
           line-height: 1.5rem; }
   .portfolio {
     padding: 3rem; }
+    .portfolio__img {
+      position: absolute;
+      z-index: -1;
+      height: 50rem; }
+      .portfolio__img--1 {
+        left: 0;
+        top: 100rem; }
+      .portfolio__img--2 {
+        top: 0;
+        right: 0; }
     .portfolio__content__box--right > .portfolio__content__box__info {
       bottom: 0;
       left: 0; }
@@ -571,6 +591,16 @@ textarea::placeholder {
     padding: 1rem; }
   .portfolio {
     padding: 3rem 1rem; }
+    .portfolio__img {
+      position: absolute;
+      z-index: -1;
+      height: 50rem; }
+      .portfolio__img--1 {
+        left: 0;
+        top: 100rem; }
+      .portfolio__img--2 {
+        top: 0;
+        right: 0; }
   .contact {
     padding: 3rem 1rem; }
   .footer {

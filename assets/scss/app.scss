@@ -382,8 +382,23 @@ p {
   |  Portfolio section                 |
   -------------------------------------*/
 .portfolio {
+  &__img {
+    position: absolute;
+    z-index: -1;
+    &--1 {
+      left: 0;
+      top: 70rem;
+    }
+
+    &--2 {
+      top: 0;
+      right: 0;
+    }
+  }
+
   //background-color: var(--color-secondary-dark);
   //background-image: url("../images/word_bg.png");
+  position: relative;
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -690,6 +705,21 @@ textarea::placeholder {
   }
 
   .portfolio {
+    &__img {
+      position: absolute;
+      z-index: -1;
+      height: 50rem;
+      &--1 {
+        left: 0;
+        top: 100rem;
+      }
+
+      &--2 {
+        top: 0;
+        right: 0;
+      }
+    }
+
     padding: 3rem;
     &__content {
       &__box {
@@ -809,6 +839,20 @@ textarea::placeholder {
 
   .portfolio {
     padding: 3rem 1rem;
+    &__img {
+      position: absolute;
+      z-index: -1;
+      height: 50rem;
+      &--1 {
+        left: 0;
+        top: 100rem;
+      }
+
+      &--2 {
+        top: 0;
+        right: 0;
+      }
+    }
   }
   .contact {
     padding: 3rem 1rem;
