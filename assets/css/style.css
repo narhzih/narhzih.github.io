@@ -68,7 +68,8 @@ body {
   color: var(--color-text);
   padding: 0;
   margin: 0;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  overflow-x: hidden; }
 
 p {
   line-height: 1.5rem; }
