@@ -5,11 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>I'm Olawale | Welcome to my portfolio</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="icon" href="assets/images/logo.svg" />
   </head>
   <body>
-    <header class="header">
+    <header class="header" data-aos="fade-up">
       <nav class="header__nav nav">
         <div class="nav__logo">
           <img src="assets/images/logo.svg" alt="" class="nav__logo__img" />
@@ -62,7 +63,11 @@
     </header>
 
     <section class="about">
-      <div class="about__box about__box--1">
+      <div
+        class="about__box about__box--1"
+        data-aos="fade-right"
+        data-aos-duration="1500"
+      >
         <h4 class="heading--sub">About</h4>
         <h2 class="heading--main">
           Professionally I am a fullstack web developer.
@@ -78,7 +83,11 @@
         >
       </div>
 
-      <div class="about__box about__box--2">
+      <div
+        class="about__box about__box--2"
+        data-aos="fade-left"
+        data-aos-duration="1500"
+      >
         <h2 class="heading--main">
           "Living, learning, & leveling up one day at a time" is the school of
           thought i subscribe to.
@@ -95,7 +104,7 @@
 
     <section class="skills">
       <div class="skills__container">
-        <div class="skills__skill">
+        <div class="skills__skill" data-aos="fade-up" data-aos-duration="1000">
           <div class="skills__skill__box skills__skill__box--1">
             <svg class="skills__skill__icon">
               <use xlink:href="assets/images/icons.svg#icon-display"></use>
@@ -114,7 +123,7 @@
             <p>HTML, CSS, SASS, Javascript, VueJs, NuxtJs.</p>
           </div>
         </div>
-        <div class="skills__skill">
+        <div class="skills__skill" data-aos="fade-up" data-aos-duration="2000">
           <div class="skills__skill__box skills__skill__box--1">
             <svg class="skills__skill__icon">
               <use xlink:href="assets/images/icons.svg#icon-data"></use>
@@ -134,7 +143,7 @@
             <p>NodeJs, Express, Meteor, PHP, Slim, Laravel, SQL.</p>
           </div>
         </div>
-        <div class="skills__skill">
+        <div class="skills__skill" data-aos="fade-up" data-aos-duration="3000">
           <div class="skills__skill__box skills__skill__box--1">
             <svg class="skills__skill__icon">
               <use xlink:href="assets/images/icons.svg#icon-bulb"></use>
@@ -162,7 +171,11 @@
         </h2>
       </div>
       <div class="portfolio__content">
-        <div class="portfolio__content__box portfolio__content__box--1">
+        <div
+          data-aos="fade-up-right"
+          data-aos-duration="3000"
+          class="portfolio__content__box portfolio__content__box--1"
+        >
           <div
             class="portfolio__content__box__bg portfolio__content__box__bg--1"
           ></div>
@@ -186,6 +199,8 @@
           </div>
         </div>
         <div
+          data-aos="fade-up-left"
+          data-aos-duration="3000"
           class="
             portfolio__content__box
             portfolio__content__box--2
@@ -212,7 +227,11 @@
             >
           </div>
         </div>
-        <div class="portfolio__content__box portfolio__content__box--3">
+        <div
+          data-aos="fade-up-right"
+          data-aos-duration="3000"
+          class="portfolio__content__box portfolio__content__box--3"
+        >
           <div
             class="portfolio__content__box__bg portfolio__content__box__bg--3"
           ></div>
@@ -227,6 +246,8 @@
           </div>
         </div>
         <div
+          data-aos="fade-up-left"
+          data-aos-duration="3000"
           class="
             portfolio__content__box
             portfolio__content__box--4
@@ -252,8 +273,11 @@
             >
           </div>
         </div>
-
-        <div class="portfolio__content__box portfolio__content__box--5">
+        <div
+          data-aos="fade-up-right"
+          data-aos-duration="3000"
+          class="portfolio__content__box portfolio__content__box--5"
+        >
           <div
             class="portfolio__content__box__bg portfolio__content__box__bg--5"
           ></div>
@@ -353,5 +377,10 @@
         <p>&copy; Olawale Omosekeji (Narhzih)</p>
       </div>
     </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
