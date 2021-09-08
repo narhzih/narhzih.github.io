@@ -349,6 +349,9 @@
             Let's talk
           </h2>
           <form action="#" class="form contact__form">
+            <div id="errorBlock" class="block block--error"></div>
+            <div id="successBlock" class="block block--success"></div>
+
             <div class="form__group">
               <label for="name"></label>
               <input
@@ -380,7 +383,7 @@
               ></textarea>
             </div>
 
-            <button type="submit" class="form__button button">
+            <button id="submitButton" class="form__button button">
               Send &rarr;
             </button>
           </form>
@@ -400,6 +403,7 @@
       </div>
     </footer>
 
+    <script type="text/javascript" src="assets/js/script.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();

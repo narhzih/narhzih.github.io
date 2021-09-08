@@ -1,64 +1,45 @@
-const TypeWriter = function (txtElement, words, wait = 3000) {
-  this.txtElement = txtElement;
-  this.words = words;
-  this.txt = "";
-  this.wordIndex = 0;
-  this.wait = parseInt(wait, 10);
-  this.type();
-  this.isDeleting = false;
-};
+import axios from "axios";
 
-TypeWriter.prototype.type = function () {
-  const current = this.wordIndex % this.words.length;
-  const fullTxt = this.words[current];
-
-  if (this.isDeleting) {
-    // Remove char
-    this.txt = fullTxt.substring(0, this.txt.length - 1);
-  } else {
-    // add character
-    this.txt = fullTxt.substring(0, this.txt.length + 1);
+const displayFeedback = function (type, feedback) {
+  const errorBlock = document.getElementById("errorBlock");
+  const successBlock = document.getElementById("successBlock");
+  if (type === "err") {
+    errorBlock.classList.add("visible");
+    errorBlock.innerHTML = `<p> ${feedback} </p>`;
   }
 
-  this.txtElement.innerHTML = `<span class="txt">${this.txt}</span>`;
-  let typeSpeed = 100;
-
-  if (this.isDeleting) {
-    typeSpeed /= 2;
-  }
-
-  if (!this.isDeleting && this.txt === fullTxt) {
-    typeSpeed = this.wait;
-    this.isDeleting = true;
-  } else if (this.isDeleting && this.txt === "") {
-    this.isDeleting = false;
-    this.wordIndex++;
-    typeSpeed = 500;
-  }
-  setTimeout(() => this.type(), typeSpeed);
+  setTimeout(closeFeedback, 5000);
 };
 
-document.addEventListener("DOMContentLoaded", init);
-
-function init() {
-  const txtElement = document.querySelector("#txt-type");
-  console.log(txtElement.getAttribute("data-words"));
-  const words = JSON.parse(txtElement.getAttribute("data-words"));
-  const wait = txtElement.getAttribute("data-wait");
-
-  new TypeWriter(txtElement, words, wait);
-}
-
-const stickyNav = function () {
-  const nav = document.getElementById("nav");
-
-  window.addEventListener("scroll", function (e) {
-    if (window.scrollY > 500) {
-      nav.classList.add("scrolled");
-    } else {
-      nav.classList.remove("scrolled");
-    }
-  });
+const closeFeedback = function () {
+  const errorBlock = document.getElementById("errorBlock");
+  const successBlock = document.getElementById("successBlock");
+  if (errorBlock.classList.contains("visible")) {
+    errorBlock.classList.remove("visible");
+  }
+  if (successBlock.classList.contains("visible")) {
+    successBlock.classList.remove("visible");
+  }
 };
 
-stickyNav();
+const sendFormData = async function (name, email, message) {
+  if (!name || !email || !message) {
+    displayFeedback("err", "Please provide input to all fields");
+    return;
+  }
+
+  await axios
+    .post("http://localhost:8000/api/contact")
+    .then((res) => console.log(res.data))
+    .catch((err) => console.log(err.response));
+};
+
+document.getElementById("submitButton").addEventListener("click", function (e) {
+  e.preventDefault();
+  console.log("Something nice");
+  // const name = document.getElementById("name").value;
+  // const email = document.getElementById("email").value;
+  // const message = document.getElementById("message").value;
+  // console.log(name, email, message);
+  // alert("form submitted");
+});

@@ -432,6 +432,10 @@ textarea::placeholder {
       .footer__content > p:last-child {
         margin-top: 0.5rem; }
 
+@media (min-width: 1440px) {
+  html {
+    font-size: 22px; } }
+
 @media (max-width: 1280px) {
   .header {
     padding: 3rem 4rem; }
