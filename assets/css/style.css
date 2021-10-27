@@ -351,6 +351,10 @@ p {
         background-image: url("../images/works/img-tb.png"); }
       .portfolio__content__box__bg--5 {
         background-image: url("../images/works/img-dcg.png"); }
+      .portfolio__content__box__bg--6 {
+        background-image: url("../images/works/img-caena.png"); }
+      .portfolio__content__box__bg--7 {
+        background-image: url("../images/works/img-supermart.png"); }
     .portfolio__content__box__info {
       position: absolute;
       width: 30rem;
