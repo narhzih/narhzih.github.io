@@ -463,7 +463,7 @@ textarea::placeholder {
   .header__content {
     flex-direction: column; }
     .header__content__box:first-child {
-      margin-bottom: 3rem; }
+      margin-bottom: 0; }
     .header__content__box--2 {
       width: 65%; }
       .header__content__box--2 > h2 {

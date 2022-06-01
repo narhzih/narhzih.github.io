@@ -613,7 +613,7 @@ textarea::placeholder {
       flex-direction: column;
       &__box {
         &:first-child {
-          margin-bottom: 3rem;
+          margin-bottom: 0;
         }
         &--2 {
           width: 65%;
